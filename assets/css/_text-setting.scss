@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Noto+Sans+JP:wght@100;400;700&family=Noto+Serif+JP&display=swap');
+
+$font-size_1024: 95%;
+$font-size_960:90%;
+$font-size_600:85%;
+
+@mixin text-default-setting(){
+  font-family: 'Inter','Noto Sans JP', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	//letter-spacing: 0em;
+	//font-feature-settings:"palt" 1;
+  font-kerning: normal;
+  font-display: swap;
+  line-break: strict;
+  color: $color-textbasic;
+}
+
+@mixin text-light-setting(){
+  font-family: 'Inter','Noto Sans JP', sans-serif;
+	font-weight: 100;
+	font-style: normal;
+  font-kerning: normal;
+  font-display: swap;
+  line-break: strict;
+  color: $color-textbasic;
+}
+
+@mixin text-bold-setting(){
+  font-family: 'Inter','Noto Sans JP', sans-serif;
+  font-weight: 700;
+	font-style: normal;
+	//letter-spacing: 0.1em;
+	//font-feature-settings:"palt" 1;
+  font-kerning: normal;
+  font-display: swap;
+  line-break: strict;
+  color: $color-textbasic;
+}
+
+////Text-size-setting
+@mixin text_setting_meta(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 6 / 10);
+  @media screen and (min-width:600px){
+    font-size:calc( #{$font-size_960} * 7 / 10);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 8 / 10);
+  }
+}
+
+@mixin text_setting_ss(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 7 / 10);
+  @media screen and (min-width:600px){
+    font-size:calc( #{$font-size_960} * 7.5 / 10);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 8 / 10);
+  }
+}
+
+@mixin text_setting_s(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 10 / 10);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 9.5 / 10);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 9 / 10);
+  }
+}
+
+@mixin text_setting_m(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 9 / 10);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 10 / 10);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 11 / 10);
+  }
+}
+
+@mixin text_setting_l(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 10 / 5);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 12 / 5);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 13 / 5);
+  }
+}
+
+@mixin text_setting_ll(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 10 / 5);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 15 / 5);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 20 / 5);
+  }
+}
+
+@mixin text_setting_ll-light(){
+  @include text-light-setting;
+  letter-spacing: 0.05em;
+  font-feature-settings:"palt" 1;
+  line-height: 1.2;
+  font-size:calc( #{$font-size_600} * 25 / 10);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 32 / 10);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 40 / 10);
+  }
+}
+
+@mixin text_settingEN_m(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 8 / 5);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 10 / 5);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 12 / 5);
+  }
+}
+
+@mixin text_settingEN_l(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 15 / 5);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 30 / 5);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 45 / 5);
+  }
+}
+
+@mixin text_setting_Jpdescription(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 10.9 / 10);
+  @media screen and (min-width:960px){
+    //font-size:calc( #{$font-size_960} * 12 / 10);
+    font-size: 1.5vmax;
+    //font-size: 1.28vmax;
+  }
+  @media screen and (min-width:1240px){
+    //font-size:calc( #{$font-size_1024} * 10 / 10);
+    font-size: 1.1vmax;
+    //font-size: 0.8vmax;
+  }
+}
+
+@mixin text_setting_Endescription(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 11 / 10);
+  @media screen and (min-width:960px){
+    //font-size:calc( #{$font-size_960} * 11.8 / 10);
+    font-size: 1.6vmax;
+  }
+  @media screen and (min-width:1240px){
+    //font-size:calc( #{$font-size_1024} * 10.5 / 10);
+    font-size: 1.12vmax;
+  }
+}
+
+@mixin text_setting_title(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 18 / 10);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 19 / 10);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 20 / 10);
+  }
+}
+
+@mixin text_setting_headerJpTitle(){
+  @include text-default-setting;
+  font-size:4.3vw;
+  line-height: 1.0 !important;
+  margin-bottom: $spacing-1;
+  @media screen and (min-width:600px){
+    font-size:calc( #{$font-size_960} * 11 / 5);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 12 / 5);
+  }
+}
+
+@mixin text_setting_headerText(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 14 / 10);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 14.5 / 10);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 15 / 10);
+  }
+}
+
+@mixin text_setting_headerEnTitle(){
+  @include  text-bold-setting;
+  font-size:8vw;
+  line-height: 0.9 !important;
+  color: $color-textbasic;
+  @media screen and (min-width:900px){
+    font-size:7vw;
+  }
+  /*
+  font-size:calc( #{$font-size_600} * 12 / 5);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 18 / 5);
+  }
+  @media screen and (min-width:1240px){
+    //font-size:calc( #{$font-size_1024} * 24 / 5);
+    font-size:8vw;
+    line-height: 0.9 !important;
+  }
+  */
+}
+
+//language
+.jp-text{
+  color:$color-jptext-default;
+  line-height: 1.8;
+}
+
+.en-text{
+  color: $color-entext-default;
+  line-height: 1.5;
+}
+
+.jp-description{
+  @include text_setting_Jpdescription;
+  color:$color-jptext-default;
+  line-height: 1.7;
+}
+
+.en-description{
+  @include text_setting_Endescription;
+  color: $color-entext-default;
+  line-height: 1.6;
+}
+
+////text-decoration
+.gray_out{
+	opacity: 40%;
+	opacity:0.4;
+	filter: alpha(opacity=40);/* ie lt 8 */
+	-ms-filter: "alpha(opacity=40)";/* ie 8 */
+	-moz-opacity:0.4;/* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.4;
+}
+
+b, strong{
+  @include text-bold-setting;
+}

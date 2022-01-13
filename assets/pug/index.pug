@@ -1,0 +1,86 @@
+include parts/_general-info.pug
+include parts/_pj-list.pug
+include parts/_sns.pug
+
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description", content="")
+    meta(name="keywords", content="筧康明, xlab, 成果発表会, 2022")
+    meta(name="author", content="東京大学大学院 筧康明研究室")
+    meta(property="og:title", content="")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="***")
+    meta(property="og:image", content="***")
+    meta(property="og:site_name", content="")
+    meta(property="og:description", content="***")
+    meta(name="copyright", content="東京大学 筧康明研究室")
+    meta(name="twitter:card", content="summary_large_image")
+    title 東京大学 大学院情報学環 筧康明研究室 #{eventTitle}
+    link(rel='stylesheet', href="style.css")
+    link(rel='apple-touch-icon', type='image/png', href='***')
+    link(rel='icon', type='image/png', href='***')
+    script(src="dist/js/webfont.js")
+  body
+    section#container
+      header#header-index
+        div#header-contents
+          h1#text-jpTitle 東京大学 大学院情報学環 筧康明研究室
+          h2#text-enTitle
+            span.span-title xlab Showcase 2022
+            span.span-title.gray_out Interverse of Things
+          hr.hr-short
+          p.text-schedule 2022年 2月10(木)-16日(水) 
+            span.block  オンライン展示
+          hr.hr-short
+          p.text-schedule 2022年 2月12日(土) 
+            span.block オンライン研究発表会
+      section#contents
+        div#about.content-block.setting-responsive
+          //h3.content-title ABOUT
+          p.jp-description 
+            | 東京大学大学院情報学環・学際情報学府の筧康明研究室（xlab）は、主に2020年度の研究・制作成果を紹介するイベント xlab Online Showcase 2021を開催します。本オンラインイベントは、テーマに基づくプロトタイピング作品展示、ゲストを交えたトークセッション、およびメンバーによるインタラクティブな研究発表セッションで構成されます。
+            a(href="#showcase") プロトタイピング作品展示
+            | は、3/27(土)から3/29(月)までの3日間、オンラインで行われます。さらに、
+            a(href="#event") トークセッションおよびインタラクティブ研究発表セッション
+            | は、3/28(日)午後にZoom上で開催します（事前登録が必要です）。今回のテーマは「Narrative Materials -ものがたるものたち-」としました。『ものづくり』と『ものがたり』の関係について、さまざまな観点からアプローチします。オンライン開催となりますが、皆様のご来場・ご参加をお待ちしております。
+          p.en-description Dummy Text.Yasuaki Kakehi Laboratory (xlab) at the Interfaculty Initiative in Information Studies (III) and the Graduate School of Interdisciplinary Information Studies (GSII), the University of Tokyo, will hold an event called xlab Online Showcase 2021, which will mainly introduce the results of research and production in 2020. This online event will consist of a theme-based prototyping exhibition, a talk session with guests, and a members' interactive research presentation session. The prototyping exhibition will be held online for three days, from March 27 (Sat) to March 29 (Mon). In addition, a talk session and an interactive research presentation session will be held on Zoom in the afternoon of Sunday, March 28 (pre-registration is required). The theme of this year's conference is "Narrative Materials - Things that Matter. We will approach the relationship between "Monozukuri" and "Monogatari" from various perspectives. We look forward to seeing you there.
+        div#event.content-block.setting-responsive
+          hr.hr-topsection
+          h3.content-title EVENT
+          p#event-date
+            b 
+              span.block 2022&nbsp;2.22&nbsp;
+              span.block 13:00-15:00
+              span.block (in JST)
+          p.jp-description 3/28(日)の14時からZoomを使用したオンライントークイベントを開催します。本イベントは、①本年度の研究/プロジェクトの紹介 ②ゲストを招いたトークセッション ③ラボメンバーによるインタラクティブ研究発表セッションの３つのパートで開催されます。開催の詳細情報・当日配信URLについてはPeatixよりご確認・ご参加登録ください。
+          p.en-description Dummy Text. We will hold an online talk event using Zoom on Sunday, March 28, from 2:00 pm. This event will be held in three parts: 1) Introduction of this year's research/projects, 2) Talk session with guests, and 3) Interactive research presentation session by lab members. For more information about the event, please visit Peatix and register for the event.
+          div.event-blocks
+            h4 Part1: Selected Talk
+            p.event-time 14:00-15:30
+            p.event-text 1年間の学会や学位の成果や活動を研究室メンバーがプレゼンテーションします。
+          div.event-blocks
+            h4 Part2: Guest Talk
+            p.event-time 16:00-17:30
+            p.event-text ダミーテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。
+          div.event-blocks
+            h4 Part3: Interactive Session
+            p.event-time 17:30-18:00
+            p.event-text 筧研究室メンバーがテーマごとに5つのルームに分かれ、本年度の研究紹介を行います。1人当たり、20分の持ち時間でインタラクティブな交流を予定しています。
+          a.button-link(href="https://xlab.iii.u-tokyo.ac.jp/" target="_blank")
+            button.button-entry 詳細情報・参加登録はこちらから（Peatix）
+        div#showcase.content-block.setting-responsive
+          hr.hr-topsection
+          h3.content-title SHOWCASE
+          ul#showcase-list
+            each val in plist
+              a(href=val.pjUrl)
+                li.showcase-content
+                  figure
+                    img.sc-thumbnail(src=val.pjImg)
+                  p.sclist-jptitle= val.pjTitle
+                  p.sclist-entitle= val.pjenTitle
+      include parts/_footer.pug

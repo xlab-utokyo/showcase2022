@@ -1,0 +1,86 @@
+header#header-teaser{
+  height: 100vh;
+  //height: -webkit-fill-available;
+  //background-image: url(bg/dummy-bg_s.jpg);
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: $spacing-6;
+  @media screen and (min-width:700px) {
+    //background-image: url(bg/dummy-bg_m.jpg);
+  }
+  div#header-contents{
+    padding-top: $spacing-6;
+    padding-left: $spacing-2;
+    @media screen and (min-width:700px) {
+      padding-top: $spacing-6;
+      padding-left: $spacing-4;
+    }
+  }
+  h1#text-jpTitle{
+    @include text_setting_headerJpTitle;
+    line-height: 1.2;
+    margin-bottom: $spacing-1;
+  }
+  h2#text-enTitle{
+    @include text_setting_headerEnTitle;
+    letter-spacing: -0.01em;
+    line-height: 1.0 !important;
+    margin-bottom: $spacing-4;
+    span.span-title{
+      display: inline-block;
+      margin-right: 0.5em;
+    }
+  }
+  p.text-schedule{
+    @include text_setting_headerText;
+  }
+  p.text-location{
+    @include text_setting_headerText;
+  }
+}
+
+footer#footer-teaser{
+  position: absolute;
+  bottom: $spacing-3;
+  margin-left: $spacing-2;
+  @media screen and (min-width:700px) {
+    margin-left: $spacing-4;
+  }
+	ul#block-sns{
+		margin-bottom: $spacing-2;
+		li{
+			@include text_setting_s;
+			display: inline-block;
+			margin-right: $spacing-1;
+		}
+	}
+	div.footer-logo-block{
+		a.link-img{
+		  text-decoration: none;
+		}
+		a.link-img:hover{
+			opacity:0.4;
+			filter: alpha(opacity=40);        /* ie lt 8 */
+			-ms-filter: "alpha(opacity=40)";  /* ie 8 */
+			-moz-opacity:0.4;                 /* FF lt 1.5, Netscape */
+			-khtml-opacity: 0.4;              /* Safari 1.x */
+		}
+		img#footer-logo{
+			width:50%;
+			height: auto;
+			//margin-top: $spacing-3;
+			margin-bottom: $spacing-1;
+			@media screen and (min-width:600px){
+				width:40%;
+			}
+			@media screen and (min-width:960px){
+				width:300px;
+			}
+		}
+	}
+	p#text-copyright{
+		color:$color-textbasic;
+		@include text_setting_meta;
+		padding-bottom: $spacing-1;
+	}
+}

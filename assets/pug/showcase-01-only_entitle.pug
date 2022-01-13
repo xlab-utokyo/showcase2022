@@ -1,0 +1,67 @@
+include parts/_general-info.pug
+include parts/_sns.pug
+
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+    meta(name="author", content="東京大学大学院 筧康明研究室")
+    meta(property="og:title", content="東京大学大学院 筧康明研究室 xlab Showcase 2022")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="***")
+    meta(property="og:image", content="***")
+    meta(property="og:site_name", content="東京大学大学院 筧康明研究室 xlab Showcase 2022")
+    meta(property="og:description", content="***")
+    meta(name="copyright", content="東京大学大学院 筧康明研究室")
+    meta(name="twitter:card", content="summary_large_image")
+    title Air on Air | 東京大学大学院　情報学環 筧康明研究室 #{eventTitle}
+    link(rel='stylesheet', href="style.css")
+    link(rel='apple-touch-icon', type='image/png', href='***')
+    link(rel='icon', type='image/png', href='***')
+    script(src="dist/js/webfont.js")
+  body#body
+    section#showcase-container
+      header#showcase-header
+          h1#sc-back-title
+            a.meta-link(href="index.html#showcase") #{eventTitle}
+      section#showcase-contents
+        div.block-workstitle.setting-responsive
+          h2.project-maintitle Coworo
+          //h3.project-entitle.en-text Dummy text Daibakuso! Audio Racing 2
+        div.block-main
+          div.block-movie
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/dlCs5Wt-QZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen)
+        div.block-text.setting-responsive
+          p.project-author.jp-text
+            span.block 筧康明 ＋
+            span.block 赤塚大典
+          p.project-author.en-text 
+            span.block Yasuaki Kakehi +
+            span.block Daisuke Akatsuka
+          hr.hr-showcase
+          p.jp-description この作品は、インターネットを介して息を届けるオンライン参加型のインスタレーションです。自身のPCあるいはスマートフォンからウェブサイトにアクセスし、マイクに向かって息を吹きかけてください。それに同期して遠隔の土地にシャボン玉が飛びます。シャボン玉が空へと舞う様子は画面を通してリアルタイムに一人称視点で眺めることができます。移動や距離に制約の生まれた今という時代において、この作品体験は、画面の向こうに広がる世界に身体性を伴いつつ接続し、空気や風という見えない存在を改めて認識する機会を与えてくれます。
+          p.en-description “Air on Air” is an online interactive installation using soap bubbles. Through a browser, viewers would look at a website that reflects the sky over a distant land. When they blow on the screen, the “breath” is transmitted through the microphone as data via the Internet, and physical soap bubbles are emitted in real-time to the land in response. The soap bubbles filled with their own “breath” dance through the air and then disappear. These little bubbles appear in the air as an evidence of its presence, also becomes an access to connect the viewer and the far away land. Moreover, the crowds of soap bubbles released from multiple machines will guide to (re)acknowledge the others.
+        div.block-text.setting-responsive
+          hr.hr-showcase
+          h3 Credit
+          ul
+            li Game Design & Research: Tomoyasu Taka
+            li Voice: Hiroki Kaimoto
+            li Music: Nana Masuda
+            li Research: Yasuaki Kakehi
+            li Special Thanks: Yukio Nozawa, Audio Game Center Project
+          hr.hr-showcase
+          h3 Publication
+          ul
+            li Yasuaki Kakehi, Daisuke Akatsuka, Juri Fujii, Yoshimori Yoshikawa, Wataru Date, Joung Min Han: “Air on Air”, Tokyo Garden, Ars Electronica Festival 2020, (2020.9)
+            li 筧康明，赤塚大典，藤井樹里，吉川義盛，伊達亘，ハンチョンミン: “Air on Air”, ZOU-NO-HANA FUTURESCAPE PROJECT 2020, (2020.9)
+        div.block-figure.setting-responsive
+          figure
+            img(src="dist/sc-figure/air_on_air/air_main.png")
+            figcaption キャプションダミーテキスト。がめちゃくちゃ長い場合。キャプションダミーテキスト。がめちゃくちゃ長い場合。キャプションダミーテキスト。がめちゃくちゃ長い場合。
+        include parts/_controller.pug
+      include parts/_footer.pug

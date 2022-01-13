@@ -1,0 +1,24 @@
+hr#hr-footer
+footer#layout-footer.setting-responsive
+  ul#block-sns
+    each val in snslist
+      li
+        a(href=val.url target="_blank")
+          = val.title
+  div.footer-logo-block
+    a.link-img(href="https://xlab.iii.u-tokyo.ac.jp/" target="_blank")
+     img#footer-logo(src="dist/fig/xlab-logo.png")
+  p#text-copyright Copyright &copy; 
+    span.pc_view 
+      a(href="https://xlab.iii.u-tokyo.ac.jp/" target="_blank") Yasuaki Kakehi Laboratory, The University of Tokyo / 東京大学筧康明研究室
+    span.sp_view 
+      a(href="https://xlab.iii.u-tokyo.ac.jp/" target="_blank") xlab, U-Tokyo
+    | , All rights reserved.
+script
+  | var randomimage = [];
+  | randomimage[0] = 'dist/bg-fig/xlab2022-bg001.jpg';
+  | randomimage[1] = 'dist/bg-fig/xlab2022-bg002.jpg';
+  | randomimage[2] = 'dist/bg-fig/xlab2022-bg003.jpg';
+  | var n =
+  | Math.floor(Math.random()*randomimage.length);
+  | document.getElementById('header-index').style.background='url("'+randomimage[n]+'") center center /cover no-repeat';
