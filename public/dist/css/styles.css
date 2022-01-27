@@ -571,6 +571,39 @@ header#header-teaser p.text-location {
   }
 }
 
+div#peatix-wrap {
+  font-family: 'Inter','Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: normal;
+  font-display: swap;
+  line-break: strict;
+  color: #333333;
+  font-size: calc( 85% * 14 / 10);
+  position: absolute;
+  top: 500px;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 960px) {
+  div#peatix-wrap {
+    font-size: calc( 90% * 14.5 / 10);
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  div#peatix-wrap {
+    font-size: calc( 95% * 15 / 10);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  div#peatix-wrap {
+    top: 600px;
+    margin-left: 2.5rem;
+  }
+}
+
 footer#footer-teaser {
   position: absolute;
   bottom: 1.5rem;

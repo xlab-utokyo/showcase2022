@@ -39,6 +39,17 @@ header#header-teaser{
   }
 }
 
+div#peatix-wrap{
+  @include text_setting_headerText;
+  position: absolute;
+  top: 500px;
+  margin-left: $spacing-2;
+  @media screen and (min-width:700px) {
+    top: 600px;
+    margin-left: $spacing-4;
+  }
+}
+
 footer#footer-teaser{
   position: absolute;
   bottom: $spacing-3;
