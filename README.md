@@ -28,5 +28,3 @@ npx gulp
 
 ## 注意
 gulp-sassを使うのに必要なnode-sassはNode.jsのVer13でしか動かないようです。（現在の最新は16とか）
-
-nodebrewなどで適宜切り替えましょう。
