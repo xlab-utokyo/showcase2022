@@ -2,11 +2,11 @@ include ../parts/_general-info.pug
 include ../parts/_sns.pug
 include ../parts/_pj-list.pug
 
-- var workTitle = plist.InterversalGravitation.pjTitle;
-- var fileName= "InterversalGravitation"
-- var jpAuthor = "森田 崇文";
-- var enAuthor = "Takafumi Morita"
-- var jpDescription = "InterversalGravitationは、万有引力（universal gravitation）を題材にして、私たちそれぞれ個人が他者との繋がり方を見直すキネティックインスタレーションです。万有引力は、物体間につねに働く引力のことで地球に引き寄せられているという意をもつが、この宇宙において全ての質点が互いにgravitation（引き寄せる作用、引力、重力）を及ぼしあっているとも捉えることができる。InterversalGravitationは、シーソー型オブジェクトの内部で液体を移動させることで重心位置を変化させ、キネティックな動きを生み出している。EHD(Electrohydrodynamics)という現象を用いたポンプで静寂な動きを実現することで、あたかも人が全く介入していなくシーソーが自ら意思を持って動いているような錯覚を生み出している。普段私たちは、地球の引力に対して、支局当然のものとして特別に意識していないと思う。その地球の引力にあらがっているようなこの作品の液体のふるまいを通して、自分がこの宇宙の中のどの質点と接続できるのかを捉えてみてほしい。"
+- var workTitle = plist.AudioRacing.pjTitle;
+- var fileName= "AudioRacing"
+- var jpAuthor = "高 友康";
+- var enAuthor = "Tomoyasu Taka"
+- var jpDescription = "視覚情報を用いずに音声のみでプレイするオーディオゲームでは，音声のみで空間的な情報提示が困難であるといった課題があり，既存のレーシングゲームにおいては，プレイヤの回転が制限された簡易的なゲームシステムを用いたものが主流となっている．それに対し本研究では，プレイヤがより自由に空間的な移動・回転が可能なレーシング型オーディオゲームの制作を試み，プレイヤが自由に移動可能な状態でゲームを成立させるために，新たな誘導システムの設計・実装を行う．"
 - var enDescription = ""
 
 doctype html
@@ -49,19 +49,19 @@ html(lang="ja")
           p.project-author.en-text 
             span.block #{enAuthor}
           hr.hr-showcase
-          p.jp-description InterversalGravitationは、万有引力（universal gravitation）を題材にして、私たちそれぞれ個人が他者との繋がり方を見直すキネティックインスタレーションです。<br>万有引力は、物体間につねに働く引力のことで地球に引き寄せられているという意をもつが、この宇宙において全ての質点が互いにgravitation（引き寄せる作用、引力、重力）を及ぼしあっているとも捉えることができる。<br>InterversalGravitationは、シーソー型オブジェクトの内部で液体を移動させることで重心位置を変化させ、キネティックな動きを生み出している。EHD(Electrohydrodynamics)という現象を用いたポンプで静寂な動きを実現することで、あたかも人が全く介入していなくシーソーが自ら意思を持って動いているような錯覚を生み出している。<br>普段私たちは、地球の引力に対して、支局当然のものとして特別に意識していないと思う。その地球の引力にあらがっているようなこの作品の液体のふるまいを通して、自分がこの宇宙の中のどの質点と接続できるのかを捉えてみてほしい。
+          p.jp-description #{jpDescription}
           p.en-description #{enDescription}
         div.block-text.setting-responsive
-          // hr.hr-showcase
-          //
-            h3 Credit
-            ul
-              li Game Design & Research: Tomoyasu Taka
-              li Voice: Hiroki Kaimoto
-              li Music: Nana Masuda
-              li Research: Yasuaki Kakehi
-              li Special Thanks: Yukio Nozawa, Audio Game Center Project
-            hr.hr-showcase
+          hr.hr-showcase
+          h3 Credit
+          ul
+            li Game Design & Research: Tomoyasu Taka
+            li Voice: Hiroki Kaimoto
+            li Music: Nana Masuda
+            li Research: Yasuaki Kakehi
+            li Special Thanks: Yukio Nozawa, Audio Game Center Project
+        //  
+          hr.hr-showcase
         //
           h3 Publication
           ul
