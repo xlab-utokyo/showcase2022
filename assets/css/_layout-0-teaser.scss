@@ -33,18 +33,10 @@ header#header-teaser{
   }
   p.text-schedule{
     @include text_setting_headerText;
+    line-height: 2.0;
   }
   p.text-location{
     @include text_setting_headerText;
-  }
-  div#peatix-wrap{
-    @include text_setting_headerText;
-    margin-top: $spacing-4;
-    margin-left: $spacing-2;
-    @media screen and (min-width:700px) {
-      margin-bottom: $spacing-4;
-      margin-left: $spacing-4;
-    }
   }
 }
 
