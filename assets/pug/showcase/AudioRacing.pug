@@ -6,8 +6,8 @@ include ../parts/_pj-list.pug
 - var fileName= "AudioRacing"
 - var jpAuthor = "高 友康";
 - var enAuthor = "Tomoyasu Taka"
-- var jpDescription = "視覚情報を用いずに音声のみでプレイするオーディオゲームでは，音声のみで空間的な情報提示が困難であるといった課題があり，既存のレーシングゲームにおいては，プレイヤの回転が制限された簡易的なゲームシステムを用いたものが主流となっている．それに対し本研究では，プレイヤがより自由に空間的な移動・回転が可能なレーシング型オーディオゲームの制作を試み，プレイヤが自由に移動可能な状態でゲームを成立させるために，新たな誘導システムの設計・実装を行う．"
-- var enDescription = ""
+- var jpDescription = "視覚情報を用いずに音声のみでプレイするオーディオゲームでは、音声のみで空間的な情報提示が困難であるといった課題があり、既存のレーシングゲームにおいては、プレイヤの回転が制限された簡易的なゲームシステムを用いたものが主流となっている。それに対し本研究では、プレイヤがより自由に空間的な移動・回転が可能なレーシング型オーディオゲームの制作し、プレイヤが自由に移動可能な状態でゲームを成立させるために、新たな誘導システムの設計・実装を行った。"
+- var enDescription = "Audio games, which are played using only sound without visual information, have issues of difficulty in presenting spatial information. Existing racing games are mostly based on a simple game system that restricts the player's rotation. We create a racing-type audio game that allows the player to move and rotate more freely in space by designing and implementing a a new guidance system which suppliment spatial information and makes the game work. "
 
 doctype html
 html(lang="ja")
@@ -41,8 +41,8 @@ html(lang="ja")
           h2.project-maintitle #{workTitle}
           //h3.project-entitle.en-text Dummy text Daibakuso! Audio Racing 2
         div.block-main
-          div.block-movie
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/dlCs5Wt-QZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen)
+          div.block-img
+            img(src="../../public/dist/pj-thumbnails/AudioRacing.jpg")
         div.block-text.setting-responsive
           p.project-author.jp-text
             span.block #{jpAuthor}
@@ -51,6 +51,12 @@ html(lang="ja")
           hr.hr-showcase
           p.jp-description #{jpDescription}
           p.en-description #{enDescription}
+        div.block-text.setting-responsive
+          hr.hr-showcase
+          h3.play Play
+          ul.play
+            a(href="https://testflight.apple.com/join/Ldofmj0S" target="_blank")
+              li Download for iOS (TestFlight)
         div.block-text.setting-responsive
           hr.hr-showcase
           h3 Credit

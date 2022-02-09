@@ -1247,6 +1247,17 @@ div.block-movie iframe {
   height: 100% !important;
 }
 
+div.block-img {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+div.block-img img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 div.block-text {
   margin-bottom: 4rem;
 }
@@ -1342,6 +1353,29 @@ div.block-text ul li {
 @media screen and (min-width: 1240px) {
   div.block-text ul li {
     font-size: calc( 95% * 9 / 10);
+  }
+}
+
+div.block-text ul.play li {
+  font-family: 'Inter','Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: normal;
+  font-display: swap;
+  line-break: strict;
+  color: #333333;
+  font-size: calc( 85% * 9 / 10);
+}
+
+@media screen and (min-width: 960px) {
+  div.block-text ul.play li {
+    font-size: calc( 90% * 10 / 10);
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  div.block-text ul.play li {
+    font-size: calc( 95% * 11 / 10);
   }
 }
 
