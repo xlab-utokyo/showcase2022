@@ -6,8 +6,8 @@ include ../parts/_pj-list.pug
 - var fileName= "SlimeMolds"
 - var jpAuthor = "齋藤 帆奈";
 - var enAuthor = "Hanna Saito"
-- var jpDescription = "真正粘菌の変形体は、遺伝的に近いもの同士は融合するが、異種など遠いもの同士は融合しない。反対に、遺伝的に近い変形体や同じ変形体は細かく裁断しても再び融合する。本研究では、複数種の変形体に異なる色の食用色素を摂取させて着色し、融合する性質としない性質を利用して色彩パターン生成を行い、可逆的な混色などの表現技法として提案する。"
-- var enDescription = "Plasmodia of true slime molds that are genetically close to each other will fuse, but those that are distant, such as different species, will not. On the contrary, genetically close or identical variants can be cut into small pieces and re-fused. In this study, I propose a technique to generate color patterns by feeding different colors of food coloring to slime molds of different species, using their tendency to fuse and not to fuse, as an expression technique for reversible color mixing."
+- var jpDescription = "真正粘菌の変形体は、異種など遠いもの同士は融合しないが、遺伝的に近い変形体や同じ変形体は細かく裁断しても再び融合する。本研究では、複数種の変形体に異なる色の食用色素を摂取させて着色し、融合する性質としない性質を利用した色彩パターン生成を行い、可逆的な混色などの表現技法として提案する。"
+- var enDescription = "Plasmodia of true slime molds that are genetically  distant, such as different species, will not fuse with each other. On the contrary, genetically close or identical variants will fuse again even if they are cut into small pieces. In this study, I propose a technique for generating color patterns by feeding food dyes of different colors to slime molds of different species, utilizing their ability/inability to fuse, as an expression technique for reversible color mixing."
 
 doctype html
 html(lang="ja")
@@ -46,8 +46,11 @@ html(lang="ja")
         div.block-text.setting-responsive
           p.project-author.jp-text
             span.block #{jpAuthor}
+            span.block ＋
+            span.block 筧 康明
           p.project-author.en-text 
-            span.block #{enAuthor}
+            span.block #{enAuthor} +
+            span.block Yasuaki Kakehi
           hr.hr-showcase
           p.jp-description #{jpDescription}
           p.en-description #{enDescription}

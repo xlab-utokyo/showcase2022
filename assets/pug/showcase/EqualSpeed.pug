@@ -6,8 +6,8 @@ include ../parts/_pj-list.pug
 - var fileName= "EqualSpeed"
 - var jpAuthor = "佐久間 響子";
 - var enAuthor = "Kyoko Sakuma"
-- var jpDescription = "我々が映像を視聴する際、さまざまなディスプレイが用いられる。同じ映像コンテンツであってもディスプレイが異なれば視聴体験は異なる。特に時間感覚は周囲の環境や自身の状態によって長短が生じると言われている。本作品ではランダムな速度で再生される360度の実写映像コンテンツの再生速度を「実世界と同じ速度」になるように調整してもらうコンテンツを通して、PCディスプレイを通じた映像視聴と実世界の速度感覚のずれを提示する。"
-- var enDescription = "When we watch videos, we use a variety of displays. Even if the video content is the same, the viewing experience will be different on different displays. In particular, our sense of time is said to vary depending on the surrounding environment and our own state. In this work, we present the gap between the sense of speed in the real world and the viewing of video content on a PC display through content that asks viewers to adjust the playback speed of 360-degree video content played at random speeds to be the same speed as in the real world."
+- var jpDescription = "我々が映像を視聴する際、さまざまなディスプレイが用いられる。同じ映像コンテンツであってもディスプレイが異なれば視聴体験は異なる。特に時間感覚は周囲の環境や自身の状態によって長短が生じると言われている。本作品ではランダムな速度で再生される360度の実写映像の再生速度を「実世界と同じ速度」になるように調整してもらうコンテンツを通して、PCディスプレイを通じた映像視聴と実世界の速度感覚のずれを提示する。"
+- var enDescription = "We watch videos, we use on various a variety of displays. Even with the same video content, if the video content is the same, the viewing experience will be different with different displays. Our sense of time, in particular, is said to vary depending on the surrounding environment and our own state of mind. You will experience the gap between the sense of speed in the real world and the viewing of video on a PC display through this work that asks youto adjust the playback speed of 360-degree video played at random speeds to be the same speed as in the real world."
 
 doctype html
 html(lang="ja")
@@ -46,12 +46,24 @@ html(lang="ja")
         div.block-text.setting-responsive
           p.project-author.jp-text
             span.block #{jpAuthor}
+            span.block ＋
+            span.block 筧 康明
           p.project-author.en-text 
-            span.block #{enAuthor}
+            span.block #{enAuthor} +
+            span.block Yasuaki Kakehi
           hr.hr-showcase
           p.jp-description #{jpDescription}
           p.en-description #{enDescription}
         div.block-text.setting-responsive
+          hr.hr-showcase
+          h3.play Play
+          ul.play
+            a(href="" target="_blank")
+              li Play on Web
+          hr.hr-showcase
+          h3 Publication
+          ul
+            li 佐久間響子, 筧康明．HMDによる全周実写映像視聴における速度・時間知覚に関する基礎的分析, 映像情報メディア学会技術報告 = ITE technical report, 45(36), 5-8, 2021
           // hr.hr-showcase
           //
             h3 Credit

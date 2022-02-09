@@ -7,7 +7,7 @@ include ../parts/_pj-list.pug
 - var jpAuthor = "辻村 和正";
 - var enAuthor = "Kazzmasa Tsujimura"
 - var jpDescription = "Linecraftはコンベックステープと付属するアタッチメントから成る、空間生成モジュールである。Withコロナの生活において、静的で頑強な建築の内部空間はこれまで以上にしなやかさを要請され、空間づくりのあり方が問い直された。Linecraftは、こうした社会的背景と生活者のニーズを回収しながら、即興的かつ動的に理想となる空間の思索/試作を支援することでこの要請に応答する。それは、物理素材の特性と制約を受け入れながら行う手仕事であり、「今でもなく、ここでもない」望ましい空間のあり方を想起する為の思考と身体感覚との拡張ツールとしても位置付けられる。"
-- var enDescription = "Linecraft is a space generation module consisting of a convex maesuring tape and attached components. Under the life with Covid-19, the interior space of static and robust architecture were demanded to be more flexible than ever before, and the way to create space was reconsidered. Linecraft addresses this demands by supporting the speculation and prototyping of an ideal space in an improvisational and dynamic way, while responding to the social background and the needs of the consumer. It is a handcrafted work that accepts the characteristics and constraints of physical materials, and is also positioned as a tools for expanding one's thoughts and physical senses in order to envision a desirable space that is neither now nor here."
+- var enDescription = "Linecraft is a space generation module consisting of a convex maesuring tape and attached components. Under the life with Covid-19, the interior space of static and robust architecture were demanded to be more flexible than ever before, and the way to create space was reconsidered. Linecraft addresses this demands by asssisting the speculation and prototyping of an ideal space in an improvisational and dynamic way, while responding to the social background and the needs of the consumer. It is a handcrafted work that accepts the characteristics and constraints of physical materials, and is also positioned as a tools for expanding one's thoughts and physical senses in order to envision a desirable space that is neither now nor here."
 
 doctype html
 html(lang="ja")
@@ -46,8 +46,14 @@ html(lang="ja")
         div.block-text.setting-responsive
           p.project-author.jp-text
             span.block #{jpAuthor}
+            span.block ＋
+            span.block 中野 太輔
+            span.block ＋
+            span.block 筧 康明
           p.project-author.en-text 
-            span.block #{enAuthor}
+            span.block #{enAuthor} +
+            span.block Taisuke Nakano +
+            span.block Yasuaki Kakehi
           hr.hr-showcase
           p.jp-description #{jpDescription}
           p.en-description #{enDescription}
@@ -61,14 +67,12 @@ html(lang="ja")
               li Music: Nana Masuda
               li Research: Yasuaki Kakehi
               li Special Thanks: Yukio Nozawa, Audio Game Center Project
-            hr.hr-showcase
-        //
-          h3 Publication
+          hr.hr-showcase
+          h3 Exhibition
           ul
-            li Yasuaki Kakehi, Daisuke Akatsuka, Juri Fujii, Yoshimori Yoshikawa, Wataru Date, Joung Min Han: “Air on Air”, Tokyo Garden, Ars Electronica Festival 2020, (2020.9)
-            li 筧康明，赤塚大典，藤井樹里，吉川義盛，伊達亘，ハンチョンミン: “Air on Air”, ZOU-NO-HANA FUTURESCAPE PROJECT 2020, (2020.9)
-        //
+            li 「Linecraft | 自分だけの空間をつくるためのワークショップ」、優秀賞、ZOU-NO-HANA FUTURESCAPE PROJECT 2021
           div.block-figure.setting-responsive
+          //
             figure
               img(src="dist/sc-figure/air_on_air/air_main.png")
               figcaption キャプションダミーテキスト。がめちゃくちゃ長い場合。キャプションダミーテキスト。がめちゃくちゃ長い場合。キャプションダミーテキスト。がめちゃくちゃ長い場合。

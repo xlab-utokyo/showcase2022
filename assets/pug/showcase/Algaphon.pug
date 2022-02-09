@@ -4,10 +4,10 @@ include ../parts/_pj-list.pug
 
 - var workTitle = plist.Algaphon.pjTitle;
 - var fileName= "Algaphon"
-- var jpAuthor = "";
+- var jpAuthor = "Harpreet Sareen";
 - var enAuthor = "Harpreet Sareen"
-- var jpDescription = ""
-- var enDescription = "Urban environments and manicured nature, with unseen native diversity, have resulted in forgotten evolutionary histories and a reduced understanding of ecosystem relations. In this context, especially the aquatic plant biosphere is the object of collective amnesia. Algaphon is a hybrid installation where algae bubbles that ring at Minnaert frequency near algal filaments are rendered audible through a hydrophone. Online visitors can leave a voice message that is translated into photosynthetically active radiation (PAR) variations in a remote aquarium. The algae bubble’s response to human speech is then recorded and emailed back to the visitor to engage in a reflective dialog with algal species. The installation refocuses attention on nonvascular physiological mechanisms and invites viewers to think about how environments exist in a heightened dynamic to adapt to human actions."
+- var jpDescription = "Algaphonは、水中の藻との「対話」を行うオンライン参加型ハイブリッドインスタレーション作品である。オンラインの参加者は作品に短い音声メッセージを入力すると、そのメッセージは時間軸を引き伸ばされ、遠隔地の水槽に照射される光（光合成活性放射（PAR））の変化に変換される。水槽には水中マイクが設置され、光に反応して藻類の周りに生成される気泡の音を収録する。本作品では、これを体験者の声に対する藻類の応答として捉え、録音された音を参加者にフィードバックすることで、藻類との対話を行う。都市環境や人工的な自然の中で、私たちの多くは生物の多様性や進化の歴史を意識することなく生活しており、特に身近に存在する水生植物の進化や役割に関する注目や理解は高いとはいえない。このインスタレーションでは、水生植物の人間とは異なる時間軸や環世界を、インタラクションを通して鑑賞者と捉え直す。"
+- var enDescription = "Urban environments and manicured nature, with unseen native diversity, have resulted in forgotten evolutionary histories and a reduced understanding of ecosystem relations. In this context, especially the aquatic plant biosphere is the object of collective amnesia. Algaphon is a hybrid installation where algae bubbles that ring at Minnaert frequency near algal filaments are rendered audible through a hydrophone. Online visitors can leave a voice message that is translated into photosynthetically active radiation (PAR) variations in a remote aquarium. The algae bubble’s response to human speech is then recorded and emailed back to the visitor to engage in a reflective dialog with algal species. The installation refocuses attention on nonvascular physiological mechanisms and invites viewers to think about how ecosystems exist in a heightened dynamic to adapt to human actions."
 
 doctype html
 html(lang="ja")
@@ -46,12 +46,26 @@ html(lang="ja")
         div.block-text.setting-responsive
           p.project-author.jp-text
             span.block #{jpAuthor}
+            span.block ＋
+            span.block Franziska Mack
+            span.block ＋
+            span.block 筧 康明
           p.project-author.en-text 
-            span.block #{enAuthor}
+            span.block #{enAuthor} +
+            span.block Franziska Mack + 
+            span.block Yasuaki Kakehi
           hr.hr-showcase
-          p.jp-description 
+          p.jp-description #{jpDescription}
           p.en-description #{enDescription}
         div.block-text.setting-responsive
+          hr.hr-showcase
+          h3 Exhibition
+          ul
+            li Ars Electronica Festival 2021 (Sep 8-12, 2021)
+            li Johannes Kepler University Linz, Linz (Austria)
+            li TOKYO GARDEN, Ars Electronica (Sep 8-12, 2021) 
+              a.link(href="https://tokyogarden.jmaf-promote.jp/" target="_blank") https://tokyogarden.jmaf-promote.jp/
+            li Culture Lab, Long Island City (Queens, NY) New York Garden, International Portal. 
           // hr.hr-showcase
           //
             h3 Credit
@@ -62,11 +76,6 @@ html(lang="ja")
               li Research: Yasuaki Kakehi
               li Special Thanks: Yukio Nozawa, Audio Game Center Project
             hr.hr-showcase
-        //
-          h3 Publication
-          ul
-            li Yasuaki Kakehi, Daisuke Akatsuka, Juri Fujii, Yoshimori Yoshikawa, Wataru Date, Joung Min Han: “Air on Air”, Tokyo Garden, Ars Electronica Festival 2020, (2020.9)
-            li 筧康明，赤塚大典，藤井樹里，吉川義盛，伊達亘，ハンチョンミン: “Air on Air”, ZOU-NO-HANA FUTURESCAPE PROJECT 2020, (2020.9)
         //
           div.block-figure.setting-responsive
             figure
