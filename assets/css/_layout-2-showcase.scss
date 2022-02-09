@@ -120,6 +120,9 @@ div.block-text{
       @include text_setting_m;
     }
   }
+  img {
+    margin-left: 25px;
+  }
 }
 
 div.block-figure{

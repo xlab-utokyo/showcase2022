@@ -1380,6 +1380,10 @@ div.block-text ul.play li {
   }
 }
 
+div.block-text img {
+  margin-left: 25px;
+}
+
 div.block-figure {
   margin-bottom: 1.5rem;
 }
