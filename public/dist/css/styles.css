@@ -1233,6 +1233,17 @@ div.block-main {
   }
 }
 
+div.block-sub {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1240px) {
+  div.block-sub {
+    width: 85%;
+  }
+}
+
 div.block-movie {
   position: relative;
   width: 100%;
@@ -1247,18 +1258,23 @@ div.block-movie iframe {
   height: 100% !important;
 }
 
-div.block-img {
+div.block-imagewrap img {
+  width: 100%;
+}
+
+/*
+div.block-img{
   position: relative;
   width: 100%;
   text-align: center;
 }
 
-div.block-img img {
+div.block-img img{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
-
+*/
 div.block-text {
   margin-bottom: 4rem;
 }
