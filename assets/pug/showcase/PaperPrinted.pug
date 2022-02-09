@@ -1,13 +1,5 @@
 include ../parts/_general-info.pug
 include ../parts/_sns.pug
-include ../parts/_pj-list.pug
-
-- var workTitle = plist.PaperPrinted.pjTitle;
-- var fileName= "PaperPrinted"
-- var jpAuthor = "伊達 亘";
-- var enAuthor = "Wataru Date"
-- var jpDescription = "本作品はPaperPrintingを用いて素材やパラメータを変更して製紙された紙である。（作品用にテキスト書き直します）"
-- var enDescription = ""
 
 doctype html
 html(lang="ja")
@@ -15,18 +7,18 @@ html(lang="ja")
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(name="description", content=jpDescription)
-    meta(name="keywords", content="筧康明, xlab, 成果発表会, 2022")
-    meta(name="author", content="東京大学 大学院情報学環 筧康明研究室")
-    meta(property="og:title", content=workTitle+" - 東京大学 大学院情報学環 筧康明研究室 成果発表会")
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+    meta(name="author", content="東京大学大学院 筧康明研究室")
+    meta(property="og:title", content="東京大学大学院 筧康明研究室 xlab Showcase 2022")
     meta(property="og:type", content="website")
-    meta(property="og:url", content="https://xlab.iii.u-tokyo.ac.jp/showcase2022/"+fileName+".html")
-    meta(property="og:image", content="https://xlab.iii.u-tokyo.ac.jp/showcase2022/img/ogp/"+fileName+".jpg")
-    meta(property="og:site_name", content="xlab Showcase 2022")
-    meta(property="og:description", content=jpDescription)
-    meta(name="copyright", content="東京大学 大学院情報学環 筧康明研究室")
+    meta(property="og:url", content="***")
+    meta(property="og:image", content="***")
+    meta(property="og:site_name", content="東京大学大学院 筧康明研究室 xlab Showcase 2022")
+    meta(property="og:description", content="***")
+    meta(name="copyright", content="東京大学大学院 筧康明研究室")
     meta(name="twitter:card", content="summary_large_image")
-    title #{workTitle} - 東京大学 大学院情報学環 筧康明研究室 #{eventTitle}
+    title PaperPrinted | 東京大学大学院　情報学環 筧康明研究室 #{eventTitle}
     link(rel='stylesheet', href="../style.css")
     link(rel='apple-touch-icon', type='image/png', href='***')
     link(rel='icon', type='image/png', href='***')
@@ -35,42 +27,217 @@ html(lang="ja")
     section#showcase-container
       header#showcase-header
           h1#sc-back-title
-            a.meta-link(href="index.html#showcase") #{eventTitle}
+            a.meta-link(href="../index.html#showcase") #{eventTitle}
       section#showcase-contents
         div.block-workstitle.setting-responsive
-          h2.project-maintitle #{workTitle}
+          h2.project-maintitle PaperPrinted
           //h3.project-entitle.en-text Dummy text Daibakuso! Audio Racing 2
         div.block-main
-          div.block-movie
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/dlCs5Wt-QZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen)
+          ul#figure-thumbnail-2column
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-01.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #001
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-02.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #002
+                  span.block2 Material: Red colored paper, Yellow colored paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-03.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #003
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-04.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #004
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-05.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #005
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-06.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #006
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-07.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #007
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-08.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #008
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-09.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #009
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-10.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #010
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-11.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #011
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-12.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #012
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-13.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #013
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-14.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #014
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-15.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #015
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-16.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #016
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-17.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #017
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-18.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #018
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-19.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #019
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-20.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #020
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-21.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #021
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-22.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #022
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-23.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #023
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-24.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #024
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-25.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #025
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-26.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #026
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-27.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #027
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-28.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #028
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-29.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #029
+                  span.block2 Material: White paper
+            li.column-list
+              figure.list-figure
+                img.list-img(src="../../public/dist/img/ex_watarudate/xlab-showcase2022-paperprinted-30.jpg")
+                figcaption 
+                  span.block2 PaperPrinted #030
+                  span.block2 Material: White paper
         div.block-text.setting-responsive
           p.project-author.jp-text
-            span.block #{jpAuthor}
+            span.block 伊達 亘
+            span.block ＋
+            span.block 筧 康明
           p.project-author.en-text 
-            span.block #{enAuthor}
+            span.block Wataru Date +
+            span.block Yasuaki Kakehi
           hr.hr-showcase
-          p.jp-description #{jpDescription}
-          p.en-description #{enDescription}
+          p.jp-description PaperPrintedは、紙のファブリケーション手法PaperPrintingを用いて造形された紙である。不要になったコピー用紙／広報物／色紙などの紙のプロダクトを採取、再利用して素材化した。単一的な素材で造形するだけでなく、複数素材のレイアウトや出力時のストロークの変更によるパラメータの変更による様々な紙の造形を提案する。
+          p.en-description PaperPrinted is paper sculpted using PaperPrinting, a paper fabrication method. PaperPrinted is a material made by collecting and reusing paper products such as copy paper, publicity materials, and colored paper that are no longer needed. In addition to modeling with a single material, we propose a variety of paper modeling by changing the parameters of the layout of multiple materials and changing the strokes during output.
         div.block-text.setting-responsive
-          // hr.hr-showcase
-          //
-            h3 Credit
-            ul
-              li Game Design & Research: Tomoyasu Taka
-              li Voice: Hiroki Kaimoto
-              li Music: Nana Masuda
-              li Research: Yasuaki Kakehi
-              li Special Thanks: Yukio Nozawa, Audio Game Center Project
-            hr.hr-showcase
-        //
+          hr.hr-showcase
+          h3 Webpage
+          ul
+            a(href="https://xlab.iii.u-tokyo.ac.jp/projects/paperprinting/" target="_blank")
+              li https://xlab.iii.u-tokyo.ac.jp/projects/paperprinting/                
+          hr.hr-showcase
           h3 Publication
           ul
-            li Yasuaki Kakehi, Daisuke Akatsuka, Juri Fujii, Yoshimori Yoshikawa, Wataru Date, Joung Min Han: “Air on Air”, Tokyo Garden, Ars Electronica Festival 2020, (2020.9)
-            li 筧康明，赤塚大典，藤井樹里，吉川義盛，伊達亘，ハンチョンミン: “Air on Air”, ZOU-NO-HANA FUTURESCAPE PROJECT 2020, (2020.9)
-        //
-          div.block-figure.setting-responsive
-            figure
-              img(src="dist/sc-figure/air_on_air/air_main.png")
-              figcaption キャプションダミーテキスト。がめちゃくちゃ長い場合。キャプションダミーテキスト。がめちゃくちゃ長い場合。キャプションダミーテキスト。がめちゃくちゃ長い場合。
+            li 伊達 亘，西原 由実，筧 康明: “PaperPrinting: 紙のデジタルファブリケーションとデザイン,” The Journal of 4D and Functional Fabrication, No.1 pp. 18-26 (2020) DOI：https://doi.org/10.34498/4dff.1.18
+            li Wataru Date and Yasuaki Kakehi. 2018. PaperPrinting: a Machine for Prototyping Paper and Its Applications for Graphic Design. In ACM SIGGRAPH 2018 Studio (SIGGRAPH ’18). ACM, New York, NY, USA, Article 8, 2 pages. DOI: https://doi.org/10.1145/3214822.3214830
+          hr.hr-showcase
+          div.block-movie
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/dlCs5Wt-QZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen)
         include ../parts/_controller.pug
       include ../parts/_footer.pug

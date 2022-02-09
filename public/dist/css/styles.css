@@ -287,6 +287,17 @@ span.block {
   margin-right: 0.25rem;
 }
 
+span.block2 {
+  display: block;
+  margin-right: 0.25rem;
+}
+
+@media screen and (min-width: 960px) {
+  span.block2 {
+    display: inline-block;
+  }
+}
+
 footer#layout-footer ul#block-sns {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -1407,4 +1418,110 @@ a.meta-link:hover {
   filter: alpha(opacity=1);
   -moz-opacity: 1.0;
   opacity: 1.0;
+}
+
+ul#figure-thumbnail-3column {
+  list-style: none;
+}
+
+ul#figure-thumbnail-3column li.column-list {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  ul#figure-thumbnail-3column li.column-list {
+    width: 32.9%;
+    vertical-align: top;
+    margin-bottom: 1rem;
+  }
+}
+
+ul#figure-thumbnail-3column li.column-list figure.list-figure {
+  width: 100%;
+}
+
+ul#figure-thumbnail-3column li.column-list figure.list-figure img.list-img {
+  width: 100%;
+  height: auto;
+}
+
+ul#figure-thumbnail-3column li.column-list figure.list-figure figcaption {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  font-family: 'Inter','Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: normal;
+  font-display: swap;
+  line-break: strict;
+  color: #333333;
+  font-size: calc( 85% * 7 / 10);
+}
+
+@media screen and (min-width: 600px) {
+  ul#figure-thumbnail-3column li.column-list figure.list-figure figcaption {
+    font-size: calc( 90% * 7.5 / 10);
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  ul#figure-thumbnail-3column li.column-list figure.list-figure figcaption {
+    font-size: calc( 95% * 8 / 10);
+  }
+}
+
+ul#figure-thumbnail-2column {
+  list-style: none;
+}
+
+ul#figure-thumbnail-2column li.column-list {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  ul#figure-thumbnail-2column li.column-list {
+    width: 49.5%;
+    vertical-align: top;
+    margin-bottom: 1rem;
+  }
+}
+
+ul#figure-thumbnail-2column li.column-list figure.list-figure {
+  width: 100%;
+}
+
+ul#figure-thumbnail-2column li.column-list figure.list-figure img.list-img {
+  width: 100%;
+  height: auto;
+}
+
+ul#figure-thumbnail-2column li.column-list figure.list-figure figcaption {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  font-family: 'Inter','Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: normal;
+  font-display: swap;
+  line-break: strict;
+  color: #333333;
+  font-size: calc( 85% * 7 / 10);
+}
+
+@media screen and (min-width: 600px) {
+  ul#figure-thumbnail-2column li.column-list figure.list-figure figcaption {
+    font-size: calc( 90% * 7.5 / 10);
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  ul#figure-thumbnail-2column li.column-list figure.list-figure figcaption {
+    font-size: calc( 95% * 8 / 10);
+  }
 }
