@@ -1381,7 +1381,7 @@ div.block-text ul.play li {
   font-display: swap;
   line-break: strict;
   color: #333333;
-  font-size: calc( 85% * 9 / 10);
+  font-size: calc( 85% * 12 / 10);
 }
 
 @media screen and (min-width: 960px) {

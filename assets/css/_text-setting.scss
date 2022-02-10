@@ -83,6 +83,17 @@ $font-size_600:85%;
   }
 }
 
+@mixin text_setting_mm(){
+  @include text-default-setting;
+  font-size:calc( #{$font-size_600} * 12 / 10);
+  @media screen and (min-width:960px){
+    font-size:calc( #{$font-size_960} * 10 / 10);
+  }
+  @media screen and (min-width:1240px){
+    font-size:calc( #{$font-size_1024} * 11 / 10);
+  }
+}
+
 @mixin text_setting_l(){
   @include text-default-setting;
   font-size:calc( #{$font-size_600} * 10 / 5);
