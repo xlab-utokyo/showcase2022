@@ -1392,7 +1392,7 @@ div.block-text ul.play li {
 
 @media screen and (min-width: 1240px) {
   div.block-text ul.play li {
-    font-size: calc( 95% * 11 / 10);
+    font-size: calc( 95% * 12 / 10);
   }
 }
 
@@ -1579,4 +1579,8 @@ ul#figure-thumbnail-2column li.column-list figure.list-figure figcaption {
   ul#figure-thumbnail-2column li.column-list figure.list-figure figcaption {
     font-size: calc( 95% * 8 / 10);
   }
+}
+
+p.jp-attention {
+  color: red;
 }
