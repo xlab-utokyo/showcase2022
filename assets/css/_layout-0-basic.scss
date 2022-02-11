@@ -192,6 +192,26 @@ button.button-entry{
   }
 }
 
+button.button-comment{
+	cursor: pointer;
+	@include text_setting_m;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	appearance: none;
+	border: 0;
+	border-radius: 4px;
+	background: #000;
+	color: $color-bg;
+	padding: $spacing-2 $spacing-3;
+	width:100%;
+	margin-top: $spacing-4;
+	margin-bottom: $spacing-4;
+	@media screen and (min-width:600px) {
+	  width: auto;
+	}
+}
+
 a.button-link{
   text-decoration: none;
   :hover{

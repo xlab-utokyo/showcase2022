@@ -436,6 +436,48 @@ button.button-entry {
   }
 }
 
+button.button-comment {
+  cursor: pointer;
+  font-family: 'Inter','Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: normal;
+  font-display: swap;
+  line-break: strict;
+  color: #333333;
+  font-size: calc( 85% * 9 / 10);
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  appearance: none;
+  border: 0;
+  border-radius: 4px;
+  background: #000;
+  color: #FFFFFF;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 960px) {
+  button.button-comment {
+    font-size: calc( 90% * 10 / 10);
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  button.button-comment {
+    font-size: calc( 95% * 11 / 10);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  button.button-comment {
+    width: auto;
+  }
+}
+
 a.button-link {
   text-decoration: none;
 }
