@@ -915,6 +915,10 @@ div.content-block p {
   margin-bottom: 1.5rem;
 }
 
+div#close.content-block {
+  text-align: center;
+}
+
 div.event-blocks {
   width: 100%;
   vertical-align: top;
